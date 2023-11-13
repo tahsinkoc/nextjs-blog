@@ -1,4 +1,5 @@
 'use client'
+import Navbar from '@/components/Navbar';
 import ShortedPost from '@/components/ShortedPost'
 import React, { useEffect, useState } from 'react'
 import 'react-quill/dist/quill.snow.css';
@@ -25,6 +26,7 @@ const page = (props: Props) => {
     }, [])
     return (
         <div className='bg-mainBg'>
+            <Navbar />
             <div className='lg:w-7/12 w-full mx-auto'>
                 {
                     Data.map((item, index) => {

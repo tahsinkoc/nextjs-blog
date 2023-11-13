@@ -1,3 +1,5 @@
+'use client'
+import Navbar from '@/components/Navbar'
 import ShortedPost from '@/components/ShortedPost'
 
 type item = {
@@ -18,10 +20,13 @@ const page = async ({ params }: { params: { id: string } }) => {
     console.log(data);
 
     return (
-        <div className='lg:w-7/12 w-full mx-auto'>
-            <title>{data.title}</title>
-            <ShortedPost item={data} mod={1} />
-        </div>
+        <>
+            <Navbar />
+            <div className='lg:w-7/12 w-full mx-auto'>
+                <title>{data.title}</title>
+                <ShortedPost item={data} mod={1} />
+            </div>
+        </>
     )
 }
 

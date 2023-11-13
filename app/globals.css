@@ -7,6 +7,38 @@ body {
   background-color: #0f0f0f;
 }
 
+.fade {
+  animation: .4s fadeIn cubic-bezier(0.175, 0.885, 0.32, 1);
+}
+
+.fadeLeft {
+  animation: .4s fadeLeft cubic-bezier(0.175, 0.885, 0.32, 1)
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    top: -100%;
+  }
+
+  to {
+    top: 5;
+    opacity: 1;
+  }
+}
+
+@keyframes fadeLeft {
+  from {
+    opacity: 0;
+    left: -100%;
+  }
+
+  to {
+    left: 5;
+    opacity: 1;
+  }
+}
+
 /* :root {
   --foreground-rgb: 0, 0, 0;
   --background-start-rgb: 214, 219, 220;
