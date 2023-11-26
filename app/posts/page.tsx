@@ -26,6 +26,7 @@ const page = (props: Props) => {
     }, [])
     return (
         <div className='bg-mainBg'>
+            <title>Posts</title>
             <Navbar />
             <div className='lg:w-7/12 w-full mx-auto'>
                 {
