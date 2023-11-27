@@ -3,6 +3,16 @@ import Navbar from '@/components/Navbar';
 import ShortedPost from '@/components/ShortedPost'
 import React, { useEffect, useState } from 'react'
 import 'react-quill/dist/quill.snow.css';
+import ReactMarkdown from 'react-markdown';
+const markdownContent = `
+  # Başlık
+
+  Bu bir **Markdown** içeriği örneğidir. Burada *italik* ve **kalın** metinler, [bağlantılar](https://www.example.com) ve daha fazlası var.
+  
+  - Liste öğesi 1
+  - Liste öğesi 2
+  - Liste öğesi 3
+  `;
 type Props = {
     item: object[]
 }
